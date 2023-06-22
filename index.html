@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
     <title>Trang Nhất</title>
+
+    <!-- Website tin TỨC CSS -->
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
+    <!-- Header Area -->
     <header>
-      <div>
+      <!-- Thẻ div bọc bên dưới không cần thiết cho việc làm ui vì không có tác dụng gì cả
+            Tránh sử dụng quá nhiều thẻ div dư thừa trong code làm tốn tài nguyên và làm xấu code  -->
+      <div>  
+        <!-- Logo -->
         <figure>
           <img class="logo" src="./image/logo-bao-moi.png" alt="Logo Báo Mới" />
         </figure>
+        <!-- End Logo -->
+
+        <!-- Pagination Menu -->
         <nav>
           <ul class="menu">
+            <!-- KHÔNG SỬ DỤNG LINK HREF CHO THẺ A NHƯ VẬY NHA PHÁT XEM LẠI BÀI ĐƯỜNG DẪN TƯƠNG ĐỐI VÀ 
+              TUYỆT ĐỐI 
+            -->
             <li><a href="http://127.0.0.1:5500/index.html">Trang nhất</a></li>
             <li><a href="http://127.0.0.1:5500/pageThoiSu.html">Thời sự</a></li>
             <li><a href="http://127.0.0.1:5500/pageStar.html">Star</a></li>
@@ -23,16 +38,23 @@
             <li><a href="#">Beuauty & Fashion</a></li>
           </ul>
         </nav>
+        <!-- End Pagination Menu -->
+
       </div>
     </header>
+    <!-- End Header -->
 
+    <!-- Bỏ br đi hem cần thiết  -->
     <br />
     <hr style="width: 50%" />
+    <!-- hr cho full with 100% luôn  -->
     <br />
 
+    <!-- Body Area -->
     <main>
       <h1 style="text-align: center">Tổng hợp những tin tức nổi bật nhất</h1>
 
+      <!-- List Section -->
       <section class="container">
         <h2>THỜI SỰ</h2>
 
@@ -114,8 +136,12 @@
         </figure>Thương hiệu VANS ra sản phẩm mới mang hơi thở thập niên 90</a
         >
       </section>
-    </main>
+      <!-- End List Section -->
 
+    </main>
+    <!-- End Body Area -->
+
+    <!-- Footer -->
     <footer>
       <div class="container" style="font-size: larger; padding: 10px">
         <p>Bản quyền thuộc Tòa Soạn Báo Online Tia Chớp</p>
@@ -125,5 +151,19 @@
         </p>
       </div>
     </footer>
+    <!-- End Footer -->
   </body>
 </html>
+<!-- Review code -->
+<!-- 
+  ________SAI ĐỀ RỒI PHÁT ƠI !!!!!!!!!!!!!!__________
+  TRANG CHỦ PHẢI CÓ 5 BLOCK CỦA CÁC MỤC CÒN LẠI CỦA MENU 
+  MỖI BLOCK TRONG TRANG CHỦ BAO GỒM 3 BÀI VIẾT -> LÀM LẠI MAI NỘP 
+  XEM KỸ LẠI ĐƯỜNG DẪN TƯƠNG ĐỐI VÀ TUYỆT ĐỐI NHÉ PHÁT
+  1/ Viết code nhớ tách element 
+  2/Comment đóng mở cho từng element như trên để dễ nhận biết 
+  3/Check HTML validate còn sai rất nhiều trước khi push code lên
+  4/ xem lại cách đặt tên class -> không đặt aa hay bb hay cc -> sẽ được dạy vào bài sau 
+  
+  
+ -->
