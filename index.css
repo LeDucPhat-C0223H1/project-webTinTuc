@@ -1,46 +1,66 @@
 .container{
- max-width: 100%;
- width: 1200px;
- margin: 0 auto;
-}
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+   }
+   
+   .header__websiteTinTuc{
+       background-color: antiquewhite;
+       color: red;
+       
+   }
+   .header__figure{
+       margin-left: 30px;
+       display: flex;
+       justify-content: left;
+   }
+   
+   .header__logo{
+       margin-top: 40px;
+       height: 120px;
+       width: 250px;
+   }
+   
+   .header__nav{
+       background-color: pink;
+       text-align: center;
+   }
+   
+   .header__nav__menu {
+       list-style: none;
+       display: flex;
+       justify-content: space-around;
+       font-size: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+       padding-left: 0%;
+   }
+   
+   .main__tieuDeTrang{
+       text-align: center;
+       margin-top: 25px;
+       margin-bottom: 50px;
+   }
 
-header{
-    background-color: antiquewhite;
-    color: red;
-    
-}
 
-.logo{
-    margin-top: 40px;
-    height: 120px;
-    width: 250px;
-}
-
-nav{
-    background-color: pink;
-    
-    text-align: center;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 0%;
-}
-
-.img{
-    width: 500px;
-    height: 300px;
-}
-
-.a{
-    font-size: larger;
-}
-
-footer {
-    margin-top: 100px; 
-    background-color: aquamarine;
-}
+   figure{
+    margin-left: 0;
+    }
+   
+   .main__listSection__article__image{
+       width: 500px;
+       height: 350px;
+   }
+   
+   .main__listSection__article__link{
+       font-size: larger;
+   }
+   
+   p{
+       text-align: justify;
+       line-height: 25px;
+   }
+   
+   .footer__websiteTinTuc {
+       margin-top: 100px; 
+       background-color: aquamarine;
+   }

@@ -8,152 +8,360 @@
     <!-- Title -->
     <title>Trang Nhất</title>
 
-    <!-- Website tin TỨC CSS -->
+    <!-- Website Tin TỨC CSS -->
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
     <!-- Header Area -->
-    <header>
-      <!-- Thẻ div bọc bên dưới không cần thiết cho việc làm ui vì không có tác dụng gì cả
-            Tránh sử dụng quá nhiều thẻ div dư thừa trong code làm tốn tài nguyên và làm xấu code  -->
-      <div>  
+    <header class="header__websiteTinTuc">
         <!-- Logo -->
-        <figure>
-          <img class="logo" src="./image/logo-bao-moi.png" alt="Logo Báo Mới" />
+        <figure class="header__figure">
+          <img class="header__logo" src="./image/logo-bao-moi.png" alt="Logo Báo Mới" />
         </figure>
         <!-- End Logo -->
 
         <!-- Pagination Menu -->
-        <nav>
-          <ul class="menu">
-            <!-- KHÔNG SỬ DỤNG LINK HREF CHO THẺ A NHƯ VẬY NHA PHÁT XEM LẠI BÀI ĐƯỜNG DẪN TƯƠNG ĐỐI VÀ 
-              TUYỆT ĐỐI 
-            -->
-            <li><a href="http://127.0.0.1:5500/index.html">Trang nhất</a></li>
-            <li><a href="http://127.0.0.1:5500/pageThoiSu.html">Thời sự</a></li>
-            <li><a href="http://127.0.0.1:5500/pageStar.html">Star</a></li>
-            <li><a href="http://127.0.0.1:5500/pageCINE.html">Cine</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Beuauty & Fashion</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav__menu">
+            <li><a href="./index.html">Trang nhất</a></li>
+            <li><a href="./pageThoiSu.html">Thời sự</a></li>
+            <li><a href="./pageStar.html">Star</a></li>
+            <li><a href="./pageThoiSu.html">Cine</a></li>
+            <li><a href="./pageMusic.html">Music</a></li>
+            <li><a href="./pageBeauty&Fashion.html">Beuauty & Fashion</a></li>
           </ul>
         </nav>
         <!-- End Pagination Menu -->
-
-      </div>
     </header>
     <!-- End Header -->
 
-    <!-- Bỏ br đi hem cần thiết  -->
-    <br />
-    <hr style="width: 50%" />
-    <!-- hr cho full with 100% luôn  -->
-    <br />
-
+    <hr style="width: 100%" />
+    
     <!-- Body Area -->
     <main>
-      <h1 style="text-align: center">Tổng hợp những tin tức nổi bật nhất</h1>
+      <h1 class="main__tieuDeTrang">Tổng hợp những tin tức nổi bật nhất</h1>
 
       <!-- List Section -->
+
+      <!-- Section 1 -->
       <section class="container">
         <h2>THỜI SỰ</h2>
 
-        <figure style="margin-left: 0">
-          <img
-            class="img"
-            src="./image/ukraine-70-6106-1648337797-6035-1687232172.jpg"
-            alt="Nổ lớn tại Ukraine"
-          />
-        </figure>
-        <a
-          class="a"
-          target="_blank"
-          href="https://vnexpress.net/no-lon-lam-rung-chuyen-thanh-pho-mien-tay-ukraine-4619603.html"
-          >Nổ lớn làm rung chuyển thành phố miền tây Ukraine</a
-        >
-      </section>
+        <!-- S1__Article 1 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/ukraine-70-6106-1648337797-6035-1687232172.jpg"
+              alt="Ảnh Nổ lớn tại Ukraine"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/no-lon-lam-rung-chuyen-thanh-pho-mien-tay-ukraine-4619603.html"
+            >Nổ lớn làm rung chuyển thành phố miền tây Ukraine</a>
+        </article>
+        <!-- S1__End Article 1 -->
 
+        <!-- S1__Article 2 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/duong-ngap-nuoc.jpg"
+              alt="Ảnh Nhiều đường ở Sài Gòn ngập sâu sau mưa lớn"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/nhieu-duong-o-sai-gon-ngap-sau-sau-mua-lon-4620694.html"
+            >Nhiều đường ở Sài Gòn ngập sâu sau mưa lớn</a>
+        </article>
+        <!-- S1__End Article 2 -->
+
+        <!-- S1__Article 3 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/dai-bieu-quoc-hoi.jpg"
+              alt="Ảnh Đại biểu Quốc hội kiến nghị giữ quê quán trên căn cước công dân"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/dai-bieu-quoc-hoi-kien-nghi-giu-que-quan-tren-can-cuoc-cong-dan-4620565.html"
+            >Đại biểu Quốc hội kiến nghị giữ quê quán trên căn cước công dân</a>
+        </article>
+        <!-- S1__End Article 3 -->
+      </section>
+      <!-- End Section 1 -->
+
+      <br>
+      <hr style="width: 50%;">
+      <br>
+
+      <!-- Section 2 -->
       <section class="container">
         <h2>STAR</h2>
-        <figure style="margin-left: 0">
-          <img
-            class="img"
-            src="./image/anhHuongTram.webp"
-            alt="Ảnh Hương Tràm"
-          />
-        </figure>
-        <a
-          class="a"
-          target="_blank"
-          href="https://kenh14.vn/dien-mao-gay-chu-y-cua-huong-tram-hien-tai-20230621094932518.chn"
-          >Diện mạo gây chú ý của Hương Tràm hiện tại</a
-        >
-      </section>
 
+        <!-- S2__Article 1 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/anhHuongTram.webp"
+              alt="Ảnh Hương Tràm"/>
+          </figure>
+  
+          <a
+            class="main__listSection__link"
+            target="_blank"
+            href="https://kenh14.vn/dien-mao-gay-chu-y-cua-huong-tram-hien-tai-20230621094932518.chn"
+            >Diện mạo gây chú ý của Hương Tràm hiện tại</a>
+        <!-- S2__End Article 1 -->
+
+        <!-- S2__Article 2 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/binz-hen-ho-voi-chau-bui2_XTQH.jpg"
+              alt="Ảnh Châu Bùi"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://kenh14.vn/tran-thanh-bat-ngo-khi-nghe-binz-nhan-xet-ve-chau-bui-20230623100254255.chn"
+            >Trấn Thành bất ngờ khi nghe Binz nhận xét về Châu Bùi</a>
+        </article>
+        <!-- S2__End Article 2 -->
+
+        <!-- S2__Article 3 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/tran-thanh-harri-won.webp"
+              alt="Ảnh Khoảnh khắc tình tứ của vợ chồng Trấn Thành - Hari Won"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/no-lon-lam-rung-chuyen-thanh-pho-mien-tay-ukraine-4619603.html"
+            >Khoảnh khắc tình tứ của vợ chồng Trấn Thành - Hari Won sau nhiều tin đồn</a>
+        </article>
+        <!-- S2__End Article 3 -->
+      </section>
+      <!-- End Section 2 -->
+
+      <br>
+      <hr style="width: 50%;">
+      <br>
+
+      <!-- Section 3 -->
       <section class="container">
         <h2>CINE</h2>
-        <figure style="margin-left: 0">
-          <img
-            class="img"
-            src="./image/fast10.jpg"
-            alt="Ảnh Phim Fast & Furious 10"
-          />
-        </figure>
-        <a
-          class="a"
-          target="_blank"
-          href="https://thanhnien.vn/bom-tan-fast-x-man-nhan-khan-gia-de-khoa-lap-cot-truyen-nhat-185230518145940515.htm"
-          >Bom tấn ‘Fast X’ mãn nhãn khán giả để khỏa lấp cốt truyện nhạt</a
-        >
-      </section>
 
+        <!-- S3__Article 1 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/fast10.jpg"
+              alt="Ảnh Phim Fast & Furious 10"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://thanhnien.vn/bom-tan-fast-x-man-nhan-khan-gia-de-khoa-lap-cot-truyen-nhat-185230518145940515.htm"
+            >Bom tấn ‘Fast X’ mãn nhãn khán giả để khỏa lấp cốt truyện nhạt</a>
+        </article>
+        <!-- S3__End Article 1 -->
+
+        <!-- S3__Article 2 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/transformers-1686109592343533040179.jpeg"
+              alt="Ảnh Phim Transformers">
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://thanhnien.vn/transformers-rise-of-the-beasts-nhan-ca-chua-thoi-185230607084712728.htm"
+            >'Transformers: Rise of the Beasts' nhận 'cà chua thối'</a>
+        </article>
+        <!-- S3__End Article 2 -->
+
+        <!-- S3__Article 3 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/doraemon24.jpg"
+              alt="Ảnh Phim Doraemon"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/no-lon-lam-rung-chuyen-thanh-pho-mien-tay-ukraine-4619603.html"
+            >Phần phim "Doraemon" mới lập kỷ lục ấn tượng tại phòng vé Việt</a>
+        </article>
+        <!-- S3__End Article 3 -->
+      </section>
+      <!-- End Section 3 -->
+
+      <br>
+      <hr style="width: 50%;">
+      <br>
+
+      <!-- Section 4 -->
       <section class="container">
         <h2>MUSIC</h2>
-        <figure style="margin-left: 0">
-          <img
-            class="img"
-            src="./image/showDenVau.jpg"
-            alt="Ảnh Show Đen Vâu"
-          />
-        </figure>
-        <a
-          class="a"
-          target="_blank"
-          href="https://kenh14.vn/dien-mao-gay-chu-y-cua-huong-tram-hien-tai-20230621094932518.chn"
-          >Show ca nhạc Rapper Đen Vâu "cháy vé"</a
-        >
-      </section>
 
+        <!-- S4__Article 1 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/showDenVau.jpg"
+              alt="Ảnh Show Đen Vâu"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://lifestyle.zingnews.vn/show-cua-den-vau-sau-nhung-tranh-cai-post1435000.html"
+            >Show ca nhạc Rapper Đen Vâu "cháy vé"</a>
+        </article>
+        <!-- S4__Article 1 -->
+
+        <!-- S4__Article 2 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/phan-manh-quynh.png"
+              alt="Ảnh Phan Mạnh Quỳnh tri ân người nông dân trong sáng tác mới">
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/phan-manh-quynh-tri-an-nguoi-nong-dan-trong-sang-tac-moi-4620646.html"
+            >Phan Mạnh Quỳnh tri ân người nông dân trong sáng tác mới</a>
+        </article>
+        <!-- S4__End Article 2 -->
+
+        <!-- S4__Article 3 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/wowy-ket-hop-bach-tuyet-trong-mv-tia-sang-cuoi-cung-1687231485.jpg"
+              alt="Ảnh Rapper Wowy kết hợp nghệ sĩ cải lương Bạch Tuyết"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://vnexpress.net/no-lon-lam-rung-chuyen-thanh-pho-mien-tay-ukraine-4619603.html"
+            >Rapper Wowy kết hợp nghệ sĩ cải lương Bạch Tuyết</a>
+        </article>
+        <!-- S4__End Article 3 -->
+      </section> 
+      <!-- End Section 4 -->
+
+      <br>
+      <hr style="width: 50%;">
+      <br>
+
+      <!-- Section 5 -->
       <section class="container">
         <h2>BEAUTY & FASHION</h2>
+        
+        <!--S5__Article 1 -->
+        <article>
+          <figure>
+            <img class="main__listSection__article__image" 
+                 src="./image/giayVANS.jpg" 
+                 alt="Ảnh Giày VANS mới">
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://kenh14.vn/xuat-hien-tro-lai-vans-style-73-dx-co-dien-thap-nien-90-20190320011904121.chn"
+          >Thương hiệu VANS ra sản phẩm mới mang hơi thở thập niên 90</a>
+        </article>
+        <!-- S5__End Article 1 -->
 
-        <a
-          class="a"
-          target="_blank"
-          href="https://kenh14.vn/dien-mao-gay-chu-y-cua-huong-tram-hien-tai-20230621094932518.chn"
-          ><figure style="margin-left: 0;">
-            <img class="img" src="./image/giayVANS.jpg" alt="Ảnh Giày VANS mới">
-        </figure>Thương hiệu VANS ra sản phẩm mới mang hơi thở thập niên 90</a
-        >
+        <!-- S5__Article 2 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/boots-lien-quan.jpg"
+              alt="Ảnh SAO VIỆT DIỆN BOOTS LIỀN QUẦN SANG CHẢNH"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://dep.com.vn/sao-viet-chuong-mot-boots-lien-quan-sang-chanh/"
+            >SAO VIỆT CHUỘNG MỐT BOOTS LIỀN QUẦN SANG CHẢNH</a>
+        </article>
+        <!-- S5__End Article 2 -->
+
+        <!-- S5__Article 3 -->
+        <article>
+          <figure>
+            <img
+              class="main__listSection__article__image"
+              src="./image/Saint-Laurent.jpg"
+              alt="Ảnh BST SAINT LAURENT XUÂN HÈ NAM 2024"/>
+          </figure>
+  
+          <a
+            class="main__listSection__article__link"
+            target="_blank"
+            href="https://dep.com.vn/ve-dep-cua-su-nam-tinh-duoc-anthony-vaccarello-tai-dinh-nghia-qua-bst-saint-laurent-xuan-he-nam-2024/"
+            >VẺ ĐẸP CỦA SỰ NAM TÍNH ĐƯỢC ANTHONY VACCARELLO TÁI ĐỊNH NGHĨA QUA BST SAINT LAURENT XUÂN HÈ NAM 2024</a>
+        </article>
+        <!-- S5__End Article 3 -->
       </section>
+      <!-- End Section 5 -->
       <!-- End List Section -->
 
     </main>
     <!-- End Body Area -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer__websiteTinTuc">
       <div class="container" style="font-size: larger; padding: 10px">
         <p>Bản quyền thuộc Tòa Soạn Báo Online Tia Chớp</p>
-        <p>
-          Địa chỉ: 123 Trần Văn A, Phường 20, Quận Kiếm Các, Thành phố
-          Aposaphine
-        </p>
+        <p>Địa chỉ: 123 Trần Văn A, Phường 20, Quận Kiếm Các, Thành phố Aposaphine</p>
       </div>
     </footer>
     <!-- End Footer -->
+
   </body>
 </html>
+
+
+
+
 <!-- Review code -->
 <!-- 
   ________SAI ĐỀ RỒI PHÁT ƠI !!!!!!!!!!!!!!__________
