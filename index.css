@@ -4,7 +4,7 @@
     margin: 0 auto;
    }
    
-   .header__websiteTinTuc{
+   .header__website{
        background-color: antiquewhite;
        color: red;
        
@@ -35,7 +35,7 @@
        padding-left: 0%;
    }
    
-   .main__tieuDeTrang{
+   .main__title{
        text-align: center;
        margin-top: 25px;
        margin-bottom: 50px;
@@ -46,12 +46,12 @@
     margin-left: 0;
     }
    
-   .main__listSection__article__image{
+   .main__Section__article__image{
        width: 500px;
        height: 350px;
    }
    
-   .main__listSection__article__link{
+   .main__Section__article__link{
        font-size: larger;
    }
    
@@ -60,7 +60,7 @@
        line-height: 25px;
    }
    
-   .footer__websiteTinTuc {
+   .footer__website{
        margin-top: 100px; 
        background-color: aquamarine;
    }
